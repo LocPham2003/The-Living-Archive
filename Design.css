@@ -35,19 +35,20 @@ ul.topnav-left li {
 
 .header{
     height: 20vh;
+    margin-bottom: 5vmin;
 }
 
 .header h1 {
-    font-size: 60px;
+    font-size: 10vmin;
     font-family: 'Uchen', serif;
     color: black;
     text-align: center;   
-    margin: 0
+    margin: 0;
 }
 
 .header p{
     font-family: 'Zen Loop';
-    font-size: 40px;
+    font-size: 5vmin;
     text-align: center; 
     margin: 0;  
 }
@@ -55,4 +56,19 @@ ul.topnav-left li {
 .header hr{
     width: 50%;
     text-align: center;
+}
+
+.recentPostContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.recentPost{
+    margin: 10px;
+    width: 30vw;
+    height: 55vh;
+    border-width: 3px;
+    border-color: black;
+    border-style:solid;
+    border-radius: 10px;
 }
