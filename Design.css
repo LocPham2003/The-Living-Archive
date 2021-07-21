@@ -16,21 +16,42 @@ nav{
     float: left;
 }
 
-.topnav-right ul, li{
+.topnav-left ul, li{
     display: inline;
     padding: 0;
     list-style: none;
 }
 
-.topnav-right a{
+.topnav-left a{
     font-family: 'Roboto';
     font-size: 1.5rem;
     text-decoration: none;
     color: #00004d;
     margin: 1rem 1rem;
     border-radius: 50px;
+    text-align: center;
+    float: left;
+    display: block;
+}
+
+.topnav-right a{
     float: right;
 }
+
+.topnav-left .dropDownIcon{
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .topnav-left li:not(:first-child) {
+        display: none;
+    }
+    .topnav-left li.dropDownIcon {
+      float: right;
+      display: block;
+    }
+  }
+  
 
 .header{
     text-align: center;
