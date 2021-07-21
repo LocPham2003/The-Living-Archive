@@ -1,6 +1,7 @@
-
 body {
-  background-color:  #ffffff;
+  background-color:  #EFEFEF;
+  font-size: 1.3125rem;
+
 }
 
 nav {
@@ -11,7 +12,7 @@ nav {
 
 
 nav ul {
-    background-color: black;
+    background-color: #A9A9A9;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -33,23 +34,25 @@ ul.topnav-left li {
     text-transform: uppercase;
 }
 
-.header{
-    height: 20vh;
-    margin-bottom: 5vmin;
+header{
+    height: 10rem;
+    width: 80%;
+    background-color: black;
 }
 
 .header h1 {
-    font-size: 10vmin;
-    font-family: 'Uchen', serif;
-    color: black;
-    text-align: center;   
+    font-size: 4rem;
+    font-family: 'Uchen';
+    color:  #00004d;
     margin: 0;
+    text-align: center;
 }
 
 .header p{
     font-family: 'Zen Loop';
-    font-size: 5vmin;
+    font-size: 2rem;
     text-align: center; 
+    color: #00004d;
     margin: 0;  
 }
 
@@ -57,18 +60,39 @@ ul.topnav-left li {
     width: 50%;
     text-align: center;
 }
-
-.recentPostContainer{
-    display: flex;
-    justify-content: center;
+.title{
+    font-size: 3rem;
+    font-family: Roboto;
+    margin-bottom: 0;
+    text-align: center;
+    color: #A9A9A9;
 }
 
-.recentPost{
-    margin: 10px;
-    width: 30vw;
-    height: 55vh;
-    border-width: 3px;
-    border-color: black;
-    border-style:solid;
-    border-radius: 10px;
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container img{
+    width: 15rem;
+    height: 10rem;
+}
+
+.container .post button{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 10rem;
+}
+
+.post{
+    background-color: white;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    width: 20rem;
+    text-align: center;
+    box-shadow: 5px 10px;
 }
