@@ -1,195 +1,155 @@
-
 body {
-  background-color:  #ffffff;
+  background-color:  white;
+  font-size: 1.3125rem;
+
 }
 
-nav {
-    display: block;
+nav{
+    background-color: white;
     width: 100%;
-    margin: 0;
-}
-
-nav ul {
-    background-color: black;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
 
-.topnav-left a {
-    font-family: 'Roboto';
-    color: white;
-}
-
-ul.topnav-left li {
-    list-style: none;
+.topnav-left img{
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
     float: left;
+}
+
+.topnav-right ul, li{
+    display: inline;
+    padding: 0;
+    list-style: none;
+}
+
+.topnav-right a{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
     text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    color: white;
-    padding: 14px;
-    text-transform: uppercase;
+    color: #00004d;
+    margin: 1rem 1rem;
+    border-radius: 50px;
+    float: right;
 }
 
 .header{
-    height: 5vh;
+    text-align: center;
 }
 
-.header h1 {
-    font-size: 60px;
-    font-family: 'Uchen', serif;
-    color: black;
-    text-align: center;   
+
+.header h1{
+    font-size: 4rem;
+    font-family: 'Uchen';
+    color:  #00004d;
+    margin: 0;
+}
+
+.header hr{
+    width: 50%;
 }
 
 .header p{
     font-family: 'Zen Loop';
-    font-size: 40px;
-    text-align: center;   
+    font-size: 2rem;
+    text-align: center; 
+    color: #00004d;
+    margin: 0;  
 }
 
-
-*, .blog-post-container::before, .blog-post-container::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.title{
+    font-size: 3rem;
+    font-family: Roboto;
+    margin-bottom: 0;
+    text-align: center;
+    color: #00004d;
 }
 
-.blog-post-container.blog-post_img{
-    width: 100%;
-}
-
-.blog-post-container {
+.container{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #fff;
-    width: 100%;
-    height: 100vh;
-    font-size: 10px;
-    padding: 0 1.5rem;
+    flex-wrap: wrap;
 }
 
-.blog-post {
-    width: 100%;
-    max-width: 98rem;
-    padding: 5rem;
-    background-color: #eee;
-    box-shadow: 4 2rem 10rem  rgb(0,0,0,.2);
-    display: flex;
-    align-items: center;
-    border-radius: .8rem;
-
+.container img{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 3px;
 }
 
-.blog-post_img{
-    min-width: 35rem;
-    max-width: 35rem;
-    height: 30rem;
-    transform: translateX(-8rem);
-    position: relative;
-}
-
-.blog-post_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: .8rem;
-}
-
-.blog-post_img::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    top:0;
-    left:0;
-    box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
-    border-radius: .8rem;
-}
-
-.blog-post_date span {
-    display: block;
-    color: rgb(0,0,0,.5);
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: .5rem 0;
-}
-
-.blog-post_title{
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
-    text-transform: uppercase;
-    color: #4fac4f;
-}
-
-.blog-post_content{
-    margin-bottom: 3rem;
-    font-size: 1.4rem;
-    color: rgba(0,0,0,.7);
-}
-
-.blog-post_button{
-    display: inline-block;
-    padding: 1.5rem 3rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.container .post button{
+    background-color: black;
+    color: white;
     font-size: 1.2rem;
-    color: #fff;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    border-radius: 1.8rem;
+    border-radius: 15px;
+    height: 3rem;
+    width: 10rem;
+
+    transition: ease-out 0.3s;
+}
+
+.container .post button:hover{
+    box-shadow: inset 10rem 0 0 0 white;
+    color: black;
+}
+
+.container .post{
+    background-color: #EFEFEF;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    width: 20rem;
+    text-align: center;
+    box-shadow: 5px 10px;
+}
+
+.websiteAss {
+    background-color: #1f1f2e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto';
     text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
 
-.blog-post_button:hover {
-    background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+.websiteAss .navigation{
+    width: 20rem;
+    margin: 2rem; 
 }
 
-@media screen and (min-width: 740px) and (max-width: 1024px) {
-    .header{
-        height: 15vh;
-    }
-    
-    .blog-post{
-      background-color: red;  
-      max-width: 80rem;
-    }
-
-    .blog-post-date span{
-        font-size: 5vw;
-    }
-    
-    .blog-post_img{
-        min-width: 30rem;
-        max-width: 30rem;
-        transform: translate(0, -8rem);
-    }
+.navigationList li{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
-@media screen and (max-width: 740px) {
-    .header{
-        height: 20vh;  
-    }
-
-    .header h1{
-        font-size: 3rem;
-    }
-
-    .header p{
-        font-size: 2.5rem;
-    }
-    
-    .blog-post{
-        padding: 2.5rem;
-        flex-direction: column;
-    }
-    
-    .blog-post_img{
-        min-width: 100%;
-        max-width: 100%;
-        transform: translate(0, -4rem);
-    }
+.websiteAss .navigation a{
+    text-decoration: none;
+    color: white;
 }
 
+.websiteAss .about{
+    margin: 2rem; 
+    width: 20rem;
+}
+
+.websiteAss .about li, ul{
+    display: inline;  
+    padding: 0.1rem;
+    font-size: 2rem;
+}
+
+
+.websiteAss .about i{
+    color: white;
+}
+
+
+.websiteAss .subscribeAndSurvey{
+    margin: 2rem; 
+    width: 20rem;
+
+}
