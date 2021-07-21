@@ -34,8 +34,14 @@ nav{
     display: block;
 }
 
-.topnav-right a{
+.topnav-right{
     float: right;
+    transition: ease-out 0.3;
+}
+
+.topnav-right:hover{
+    color: black;
+    text-decoration: solid;
 }
 
 .topnav-left .dropDownIcon{
