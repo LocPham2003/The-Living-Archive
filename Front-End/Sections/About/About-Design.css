@@ -1,0 +1,101 @@
+.section-title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    color: var(--main-text-color);
+    margin: 1rem 0;
+}
+
+.websiteInfo {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Roboto';
+
+}
+
+.websiteInfo .container {
+    width: 90%;
+    display: flex;
+}
+
+.websiteInfo .introduction{
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.websiteInfo .introduction .origin, .myself p{
+    text-align: left;
+    display: inline-block;
+}
+
+.websiteInfo .utilities{
+    margin-left: 5%;
+    flex-basis: 45%;
+    flex-direction: column;
+}
+
+.websiteInfo .utilities .social-media ul.connect{
+    list-style: none;
+    padding: 0;
+}
+
+.websiteInfo .utilities .social-media ul.connect li{
+   margin-bottom: 0.5rem;
+}
+
+.websiteInfo .utilities .social-media ul.connect a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.websiteInfo .utilities .social-media ul.connect i {
+    margin-right: 0.5rem;
+}
+
+.websiteInfo .utilities .social-media ul.connect a:hover {
+    text-decoration-color: black;
+}
+
+.websiteInfo .utilities .roadmap {
+    display: inline-block;
+    text-align: left;
+}
+
+.websiteInfo .utilities .roadmap button {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    height: 3rem;
+    width: 12rem;
+    
+    transition: ease-out 0.3s;
+}
+
+.websiteInfo .utilities .roadmap button:hover{
+    box-shadow: inset 12rem 0 0 0 white;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .websiteInfo .container {
+        flex-direction: column;
+    }
+
+    .websiteInfo{
+        line-height: 3rem;
+    }
+
+    .websiteInfo .utilities{
+        margin-left: 0;
+    }
+}
