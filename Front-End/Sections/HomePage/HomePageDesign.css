@@ -1,20 +1,23 @@
-.title{
-    font-size: 3rem;
-    font-family: Roboto;
-    margin-bottom: 0;
-    text-align: center;
-    color: #00004d;
-}
-
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
+}
+
+.container .post{
+    background-color: var(--content-background-color);
+    margin: 2.5rem;
+    padding: 2.5rem;
+    width: 20rem;
+    text-align: center;
+    box-shadow: 5px 10px;
 }
 
 .container img{
     width: 20rem;
     height: 15rem;
+    padding: 0.5rem 0;
     border-radius: 3px;
 }
 
@@ -34,11 +37,5 @@
     color: black;
 }
 
-.container .post{
-    background-color: #EFEFEF;
-    margin: 2.5rem;
-    padding: 2.5rem;
-    width: 20rem;
-    text-align: center;
-    box-shadow: 5px 10px;
-}
+
+

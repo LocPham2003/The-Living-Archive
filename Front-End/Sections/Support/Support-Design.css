@@ -1,0 +1,24 @@
+.container {
+    text-align: justify;
+    line-height: 1.5rem;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    color: black;
+    margin: 2.5% 10% 10% 10%;
+}
+
+.container button.interactBtn {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    height: 3rem;
+    width: 12rem;
+    
+    transition: ease-out 0.3s;
+}
+
+.container button.interactBtn:hover{
+    box-shadow: inset 12rem 0 0 0 white;
+    color: black;
+}

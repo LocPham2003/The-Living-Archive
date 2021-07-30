@@ -5,10 +5,15 @@ These are the design and visual aspect of these following elemnents:
 - Footer
 */
 
+:root{
+    --main-text-color: #00004d;
+    --background-main-theme: #1f1f2e;
+    --content-background-color: #EFEFEF;
+}
+
 body {
     background-color:  white;
     font-size: 1.3125rem;
-    
 } 
 
 nav{
@@ -34,21 +39,22 @@ ul.topnav li a,img{
     font-family: 'Roboto';
     font-size: 1.5rem;
     text-decoration: none;
-    color: #00004d;
-    padding: 1rem 1rem;
-    border-radius: 50px;
+    color: var(--main-text-color);
+    padding: 0.5rem 0.5rem;
     text-align: center;
     float: right;
     display: block;
     min-height: 2rem;
+    transition: ease-out 0.3s;
+
 }
 
 
 ul.topnav li a:hover{
-    background-color: black;
+    background-color: var(--main-text-color);
     color: white;
-    text-decoration: solid;
 }
+
 
 ul.topnav .dropDownIcon{
     display: none;
@@ -91,20 +97,20 @@ ul.topnav .dropDownIcon{
     .topnav.responsive li a {
         float: none;
         display: block;
-        text-align: right;
+        text-align: left;
         
     }
 }
 
 .header{
     text-align: center;
+    margin: 1rem 0;
 }
-
 
 .header h1{
     font-size: 4rem;
-    font-family: 'Uchen';
-    color:  #00004d;
+    font-family: 'Roboto';
+    color:  var(--main-text-color);
     margin: 0;
 }
 
@@ -116,12 +122,25 @@ ul.topnav .dropDownIcon{
     font-family: 'Roboto';
     font-size: 2rem;
     text-align: center; 
-    color: #00004d;
+    color: var(--main-text-color);
     margin: 0;  
 }
 
+.section-title h1 {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    color: var(--main-text-color);
+    margin: 1rem 0;
+}
+
+.section-title hr{
+    width: 50%;
+}
+
+
 .websiteAss {
-    background-color: #1f1f2e;
+    background-color: var(--background-main-theme);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -134,6 +153,11 @@ ul.topnav .dropDownIcon{
 .websiteAss .navigation{
     width: 20rem;
     margin: 2rem; 
+}
+
+ul.navigationList{
+    padding: 0;
+    margin: 0;
 }
 
 ul.navigationList li{
@@ -153,6 +177,11 @@ ul.navigationList li{
 .websiteAss .about{
     margin: 2rem; 
     width: 20rem;
+}
+
+.websiteAss .about ul.connect {
+    padding: 0;
+    margin: 0;
 }
 
 .websiteAss .about ul.connect li{
