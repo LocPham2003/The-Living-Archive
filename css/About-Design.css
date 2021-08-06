@@ -23,6 +23,7 @@
 .websiteInfo .introduction .origin, .myself p{
     text-align: left;
     display: inline-block;
+    margin-bottom: 2.5rem;
 }
 
 .websiteInfo .utilities{
