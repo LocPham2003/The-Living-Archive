@@ -1,3 +1,9 @@
+--offset {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
+  }
+
 .container{
     display: flex;
     justify-content: center;
@@ -6,12 +12,13 @@
 }
 
 .container .post{
-    background-color: var(--content-background-color);
+    background-color: var(--background-main-theme);
     margin: 2.5rem;
     padding: 2.5rem;
     width: 20rem;
     text-align: center;
     box-shadow: 5px 10px;
+    border: 1px solid white;
 }
 
 .container img{
@@ -21,21 +28,32 @@
     border-radius: 3px;
 }
 
-.container .post button{
-    background-color: black;
+.container .post a{
     color: white;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    height: 3rem;
-    width: 10rem;
-    
-    transition: ease-out 0.3s;
+    font-size: 2rem;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15rem;
+    transition: --offset 400ms, text-decoration-color 400ms;
+
 }
 
-.container .post button:hover{
-    box-shadow: inset 10rem 0 0 0 white;
-    color: black;
+.container .post a:hover,
+.container .post a:focus {
+  --offset: 0.4em;
+  text-decoration-color: orange;
 }
+
+@supports not (background: paint(something)) {
+  .container .post a {
+    transition: text-underline-offset 400ms, text-decoration-color 400ms;
+  }
+  
+  .container .post a:hover,
+  .container .posta:focus {
+    text-underline-offset: 0.4em;
+  }
+}
+
 
 
 

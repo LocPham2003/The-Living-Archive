@@ -10,12 +10,9 @@ function navBarToggle() {
 window.onload = function(){
   //Made the html more dynamic
   let arr = [
-    "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\css\\UniversalVisualElements.css",
-    "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\css\\Support-Design.css",
     "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\css\\HomePageDesign.css",
     "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\css\\Blogs-And-Articles-Design.css",
     "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\css\\Support-Design.css",
-    "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\css\\About-Design.css",
     "https://fonts.googleapis.com/css?family=Andada+Pro|Roboto|Uchen",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"];
     
