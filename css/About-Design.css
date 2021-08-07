@@ -1,0 +1,160 @@
+--offset {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
+  }
+
+.websiteInfo {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Roboto';
+
+
+}
+
+.websiteInfo .container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.websiteInfo .introduction{
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.websiteInfo .introduction .origin p{
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    color: var(--main-text-color);
+}
+
+.websiteInfo .introduction .myself p{
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    color: var(--main-text-color);
+}
+
+.websiteInfo .introduction .origin h1{
+    text-align: left;
+    display: inline-block;
+    color: var(--main-title-color);
+}
+
+.websiteInfo .introduction .myself h1{
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    color: var(--main-title-color);
+}
+
+.websiteInfo .utilities{
+    margin-left: 5%;
+    flex-basis: 45%;
+    flex-direction: column;
+}
+
+.websiteInfo .utilities .social-media p {
+    text-align: left;
+    color: var(--main-text-color);
+}
+
+.websiteInfo .utilities .social-media h1 {
+    text-align: left;
+    color: var(--main-title-color);
+}
+
+
+.websiteInfo .utilities .social-media ul.connect{
+    list-style: none;
+    color: var(--main-text-color);
+    padding: 0;
+}
+
+.websiteInfo .utilities .social-media ul.connect li{
+   margin-bottom: 0.5rem;
+   text-align: left;
+}
+
+.websiteInfo .utilities .social-media ul.connect a {
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15rem;
+    transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.websiteInfo .utilities .social-media ul.connect i {
+    margin-right: 0.5rem;
+}
+
+.websiteInfo .utilities .social-media ul.connect a:hover {
+    text-decoration-color: black;
+}
+
+.websiteInfo .utilities .roadmap {
+    display: inline-block;
+    color: var(--main-text-color);
+}
+
+.websiteInfo .utilities .roadmap h1{
+    display: inline-block;
+    color: var(--main-title-color);
+    text-align: left;
+}
+
+
+.websiteInfo .utilities .roadmap a {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    height: 3rem;
+    width: 12rem;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15rem;
+    transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.websiteInfo .utilities .roadmap a:hover,
+.websiteInfo .utilities .roadmap a:focus {
+  --offset: 0.4em;
+  text-decoration-color: orange;
+}
+
+@supports not (background: paint(something)) {
+    .websiteInfo .utilities .roadmap a {
+      transition: text-underline-offset 400ms, text-decoration-color 400ms;
+    }
+    
+    .websiteInfo .utilities .roadmap a:hover,
+    .websiteInfo .utilities .roadmap a:focus {
+      text-underline-offset: 0.4em;
+    }
+  }
+
+.websiteInfo .utilities .roadmap button:hover{
+    box-shadow: inset 12rem 0 0 0 white;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .websiteInfo .container {
+        flex-direction: column;
+    }
+
+    .websiteInfo{
+        line-height: 3rem;
+    }
+
+    .websiteInfo .utilities{
+        margin-left: 0;
+    }
+}
