@@ -5,15 +5,22 @@ These are the design and visual aspect of these following elemnents:
 - Footer
 */
 
+--offset {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
+  }
+
 :root{
-    --main-text-color: #00004d;
-    --background-main-theme: #1f1f2e;
+    --main-title-color:  #ffcc66;
+    --main-text-color: white;
+    --background-main-theme: black;
     --content-background-color: #EFEFEF;
 }
 
 body {
-    background-color:  white;
     font-size: 1.3125rem;
+    background-color: var(--background-main-theme);
 } 
 
 nav{
@@ -35,25 +42,50 @@ ul.topnav li{
 }
 
 
-ul.topnav li a,img{
+ul.topnav li a{
     font-family: 'Roboto';
     font-size: 1.5rem;
-    text-decoration: none;
-    color: var(--main-text-color);
+    color: var(--main-title-color);
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15rem;
+    transition: --offset 400ms, text-decoration-color 400ms;
+    color: var(--main-title-color);
     padding: 0.5rem 0.5rem;
     text-align: center;
     float: right;
     display: block;
     min-height: 2rem;
-    transition: ease-out 0.3s;
-
 }
 
 
-ul.topnav li a:hover{
-    background-color: var(--main-text-color);
-    color: white;
+ul.topnav li img {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: var(--main-title-color);
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    float: right;
+    display: block;
+    min-height: 2rem;
 }
+
+
+ul.topnav li a:focus,ul.topnav li a:hover{
+  --offset: 0.4em;
+  text-decoration-color: orange;
+}
+
+@supports not (background: paint(something)) {
+    ul.topnav li a {
+      transition: text-underline-offset 400ms, text-decoration-color 400ms;
+    }
+    
+    ul.topnav li a:hover,
+    ul.topnav li a:focus {
+      text-underline-offset: 0.4em;
+    }
+  }
+
 
 
 ul.topnav .dropDownIcon{
@@ -110,7 +142,7 @@ ul.topnav .dropDownIcon{
 .header h1{
     font-size: 4rem;
     font-family: 'Roboto';
-    color:  var(--main-text-color);
+    color:  var(--main-title-color);
     margin: 0;
 }
 
@@ -130,7 +162,7 @@ ul.topnav .dropDownIcon{
     text-align: center;
     font-family: 'Roboto';
     font-size: 3rem;
-    color: var(--main-text-color);
+    color: var(--main-title-color);
     margin: 1rem 0;
 }
 
@@ -147,12 +179,18 @@ ul.topnav .dropDownIcon{
     font-family: 'Roboto';
     text-decoration: none;
     color: white;
+    border-top: 1px solid white;
     font-size: 1rem;
 }
 
 .websiteAss .navigation{
     width: 20rem;
     margin: 2rem; 
+}
+
+.websiteAss .navigation h2{
+    color: var(--main-title-color);
+    text-decoration: underline;
 }
 
 ul.navigationList{
@@ -179,6 +217,11 @@ ul.navigationList li{
     width: 20rem;
 }
 
+.websiteAss .about h2{
+    color: var(--main-title-color);
+    text-decoration: underline;
+}
+
 .websiteAss .about ul.connect {
     padding: 0;
     margin: 0;
@@ -199,5 +242,9 @@ ul.navigationList li{
 .websiteAss .subscribeAndSurvey{
     margin: 2rem; 
     width: 20rem;
-    
+}
+
+.websiteAss .subscribeAndSurvey h2{
+    color: var(--main-title-color);
+    text-decoration: underline;
 }
