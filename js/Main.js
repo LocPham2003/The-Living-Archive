@@ -42,7 +42,7 @@ var support = {
     All of your submissions will be posted on the "Fanarts" section of my website.
     <br>
     <br>
-    <button class="interactBtn">Submit here!</button>
+    <a href="https://docs.google.com/forms/d/1G5_igOkYJwB94ZATAQAN2goGcOfZA10_GDmUbkJVXdM/edit?usp=sharing" class="interactBtn">Submit here!</a>
     <br>
     <br>`;
 
@@ -56,7 +56,7 @@ var support = {
     You can also watch an ad to support my website!
     <br>
     <br>
-    <button class="interactBtn">Watch an ad</button>
+    <a class="interactBtn">Watch an ad</a>
     <br>
     <br>
 
@@ -74,7 +74,7 @@ var support = {
         improve the quality of my content and makes the audience time here much more plausible. 
         <br>
         <br>
-        <button class="interactBtn">Fill a feedback form</button>
+        <a href="https://forms.gle/KoM2vM6aDijzBH2q6" class="interactBtn">Fill a feedback form</a>
         <br>
         <br>
     `;
