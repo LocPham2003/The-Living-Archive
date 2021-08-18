@@ -9,10 +9,10 @@ function navBarToggle() {
 
 var links = {
   createLinks: function(){
-    document.getElementById("home").href = "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\html\\HomePage.html";
-    document.getElementById("blogs").href = "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\html\\Blogs-And-Articles.html";
-    document.getElementById("support").href = "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\html\\Support.html";
-    document.getElementById("about").href = "C:\\Users\\Pham Loc Duc\\Desktop\\VisualStudioProjects\\Website\\html\\About.html";
+    document.getElementById("home").href = "..\\html\\HomePage.html";
+    document.getElementById("blogs").href = "..\\html\\Blogs-And-Articles.html";
+    document.getElementById("support").href = "..\\html\\Support.html";
+    document.getElementById("about").href = "..\\html\\About.html";
   }
 }
 
