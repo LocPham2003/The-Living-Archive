@@ -112,6 +112,7 @@ ul.topnav .dropDownIcon{
     
     .topnav.responsive {
         position: relative;
+        background-color: var(--background-main-theme);
     }
     
     .topnav.responsive li {
