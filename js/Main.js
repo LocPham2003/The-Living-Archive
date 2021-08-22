@@ -13,7 +13,6 @@ var links = {
     document.getElementById("blogs").href = "..\\html\\Blogs-And-Articles.html";
     document.getElementById("support").href = "..\\html\\Support.html";
     document.getElementById("about").href = "..\\html\\About.html";
-  }
 }
 
 var support = {
