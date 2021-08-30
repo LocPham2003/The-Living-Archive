@@ -35,6 +35,12 @@
     color: var(--main-text-color);
 }
 
+.websiteInfo .introduction .origin h1{
+    text-align: left;
+    display: inline-block;
+    color: var(--main-title-color);
+}
+
 .websiteInfo .introduction .myself p{
     text-align: left;
     display: inline-block;
@@ -42,17 +48,72 @@
     color: var(--main-text-color);
 }
 
-.websiteInfo .introduction .origin h1{
-    text-align: left;
-    display: inline-block;
+.websiteInfo .introduction .myself h1{
+    text-align: center;
+    /*display: inline-block;
+    If something breaks, uncomment this line*/
+    margin-bottom: 2.5rem;
     color: var(--main-title-color);
 }
 
-.websiteInfo .introduction .myself h1{
-    text-align: left;
+.websiteInfo .introduction .myself .members{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.websiteInfo .introduction .myself .members .person{
+    flex-basis: 45%;
+    text-align: center;
+    border: 1px solid white;
+    margin: 0.5rem;
+}
+
+.websiteInfo .introduction .myself .members .person h2{
+    color: orange;
+    margin: 0;
     display: inline-block;
-    margin-bottom: 2.5rem;
-    color: var(--main-title-color);
+}
+
+.websiteInfo .introduction .myself .members .person p{
+    color: white;
+    text-align: center;
+    margin: 0.5rem 1rem;
+    display: block;
+}
+
+.websiteInfo .introduction .myself .members .person img{
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem 0;
+    border-radius: 50%;
+    border: 5px solid var(--main-title-color);
+}
+
+.websiteInfo .introduction .myself .members .person a{
+    display: inline-block;
+    color: white;
+    margin: 0 0 1rem 0;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15rem var(--main-title-color);
+    transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.websiteInfo .introduction .myself .members .person a:hover,
+.websiteInfo .introduction .myself .members .person a:focus {
+  --offset: 0.4em;
+  text-decoration-color: orange;
+}
+
+.websiteInfo .introduction .myself .members .person ul.connect {
+    padding: 0;
+    margin: 0;
+}
+
+.websiteInfo .introduction .myself .members .person ul.connect li{
+    display: inline;  
+    padding: 0.25rem;
+    font-size: 1.5rem;
 }
 
 .websiteInfo .utilities{
@@ -96,7 +157,7 @@
 }
 
 .websiteInfo .utilities .social-media ul.connect a:hover {
-    text-decoration-color: black;
+    text-decoration-color: orange;
 }
 
 .websiteInfo .utilities .roadmap {
@@ -156,5 +217,10 @@
 
     .websiteInfo .utilities{
         margin-left: 0;
+    }
+
+    .websiteInfo .introduction .myself .members{
+        flex-direction: column;
+        text-align: center;
     }
 }
