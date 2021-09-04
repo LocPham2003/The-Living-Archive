@@ -211,6 +211,15 @@ ul.navigationList li{
 .websiteAss .navigation a{
     text-decoration: none;
     color: white;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.1rem var(--main-title-color);
+    transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.websiteAss .navigation a:hover, 
+.websiteAss .navigation a:focus {
+  --offset: 0.4rem;
+  text-decoration-color: orange;
 }
 
 .websiteAss .about{
@@ -248,4 +257,18 @@ ul.navigationList li{
 .websiteAss .subscribeAndSurvey h2{
     color: var(--main-title-color);
     text-decoration: underline;
+}
+
+.websiteAss .subscribeAndSurvey a{
+    color: white;
+    font-size: 1.5rem;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15rem var(--main-title-color);
+    transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.websiteAss .subscribeAndSurvey a:hover,
+.websiteAss .subscribeAndSurvey a:focus {
+  --offset: 0.4em;
+  text-decoration-color: orange;
 }
