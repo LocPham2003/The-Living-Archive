@@ -5,6 +5,11 @@ These are the design and visual aspect of these following elemnents:
 - Footer
 */
 
+@font-face {
+    font-family: "Canopee";
+    src: url("C:\Users\Pham Loc Duc\Desktop\VisualStudioProjects\Website\utilities\canopee.otf") format("truetype");
+}
+
 --offset {
     syntax: '<length>';
     inherits: false;
@@ -142,7 +147,7 @@ ul.topnav .dropDownIcon{
 
 .header h1{
     font-size: 4rem;
-    font-family: 'Roboto';
+    font-family: 'Canopee';
     color:  var(--main-title-color);
     margin: 0;
 }
