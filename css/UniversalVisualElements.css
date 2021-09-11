@@ -5,16 +5,16 @@ These are the design and visual aspect of these following elemnents:
 - Footer
 */
 
-@font-face {
-    font-family: "Canopee";
-    src: url("C:\Users\Pham Loc Duc\Desktop\VisualStudioProjects\Website\utilities\canopee.otf") format("truetype");
-}
-
 --offset {
     syntax: '<length>';
     inherits: false;
     initial-value: 0px;
-  }
+}
+
+@font-face {
+    font-family: cano;
+    src: url(../fonts/SVN-Canopee.otf);
+}
 
 :root{
     --main-title-color:  #ffcc66;
@@ -39,6 +39,7 @@ nav ul{
     background-color: white;
     margin: 0;
     padding: 0;
+    margin: 0rem 1rem;
 }
 
 ul.topnav li{
@@ -48,12 +49,11 @@ ul.topnav li{
 
 
 ul.topnav li a{
-    font-family: 'Roboto';
     font-size: 1.5rem;
     color: var(--main-title-color);
-    text-underline-offset: var(--offset, 0.2em);
-    text-decoration: underline 0.15rem;
-    transition: --offset 400ms, text-decoration-color 400ms;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
     color: var(--main-title-color);
     padding: 0.5rem 0.5rem;
     text-align: center;
@@ -64,7 +64,6 @@ ul.topnav li a{
 
 
 ul.topnav li img {
-    font-family: 'Roboto';
     font-size: 1.5rem;
     color: var(--main-title-color);
     padding: 0.5rem 0.5rem;
@@ -76,8 +75,8 @@ ul.topnav li img {
 
 
 ul.topnav li a:focus,ul.topnav li a:hover{
-  --offset: 0.4em;
-  text-decoration-color: orange;
+    text-decoration-color: var(--main-title-color);
+    text-underline-offset: 0.4rem;
 }
 
 @supports not (background: paint(something)) {
@@ -141,13 +140,14 @@ ul.topnav .dropDownIcon{
 }
 
 .header{
-    text-align: center;
-    margin: 1rem 0;
+    text-align: left;
+    margin: 1rem 1rem 0rem 1rem;
 }
 
 .header h1{
-    font-size: 4rem;
-    font-family: 'Canopee';
+    font-size: 5rem;
+    font-family: cano;
+    text-decoration: none;
     color:  var(--main-title-color);
     margin: 0;
 }
@@ -157,7 +157,6 @@ ul.topnav .dropDownIcon{
 }
 
 .header p{
-    font-family: 'Roboto';
     font-size: 2rem;
     text-align: center; 
     color: var(--main-text-color);
@@ -166,7 +165,6 @@ ul.topnav .dropDownIcon{
 
 .section-title h1 {
     text-align: center;
-    font-family: 'Roboto';
     font-size: 3rem;
     color: var(--main-title-color);
     margin: 1rem 0;
@@ -182,7 +180,6 @@ ul.topnav .dropDownIcon{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: 'Roboto';
     text-decoration: none;
     color: white;
     border-top: 1px solid white;
