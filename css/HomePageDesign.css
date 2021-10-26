@@ -10,43 +10,45 @@
 }  
 
 .container{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: center; */
 }
 
-.container .post{
-    background-color: var(--background-main-theme);
-    margin: 2.5rem;
-    padding: 2.5rem;
-    width: 20rem;
-    text-align: center;
-    box-shadow: 5px 10px;
-    border: 1px solid white;
+.container h2 {
+  color: white;
+  font-family: 'Roboto';
+  text-align: center;
 }
 
-.container img{
-    width: 20rem;
-    height: 15rem;
-    padding: 0.5rem 0;
-    border-radius: 3px;
+.container .mainPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.container .post a{
-    color: white;
-    font-size: 2rem;
-    font-family: cano;
-    text-underline-offset: var(--offset, 0.2em);
-    text-decoration: underline 0.15rem;
-    transition: --offset 400ms, text-decoration-color 400ms;
-
+.container .mainPost img {
+  width: 35rem;
+  height: 30rem;
+  position: relative;
 }
 
-.container .post a:hover,
-.container .post a:focus {
-  --offset: 0.4em;
-  text-decoration-color: orange;
+.container .mainPost .mainTitle {
+  background-color: white;
+  width: 35rem;
+  height: 8rem;
+  top: 10rem;
+  justify-content: center;
+}
+
+.container .mainPost .mainTitle h2 {
+  color: black;
+  font-size: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align: center;
 }
 
 @supports not (background: paint(something)) {
