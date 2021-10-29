@@ -4,18 +4,24 @@
     initial-value: 0px;
   }
 
+  :root{
+    --main-title-color:  #483E35;
+    --main-text-color: black;
+    --background-main-theme: white;
+    --content-background-color: #F6EDDC;
+}
+
 .container {
     text-align: justify;
     line-height: 1.5rem;
     font-family: 'Roboto';
     font-size: 1.1rem;
-    color: white;
+    color: var(--main-title-color);
     margin: 2.5% 10% 10% 10%;
 }
 
 .container a.interactBtn {
-    background-color: black;
-    color: white;
+    color: var(--main-text-color);
     font-size: 1.2rem;
     border-radius: 15px;
     height: 3rem;
