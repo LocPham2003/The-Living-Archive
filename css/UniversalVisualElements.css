@@ -12,15 +12,20 @@ These are the design and visual aspect of these following elemnents:
 }
 
 @font-face {
-    font-family: cano;
-    src: url(../fonts/SVN-Canopee.otf);
+    font-family: mikela;
+    src: url(../fonts/Mikela-Light.otf);
 }
 
+@font-face {
+    font-family: helvetica;
+    src: url(../fonts/HelveticaNeue-Bold.otf);
+  }
+
 :root{
-    --main-title-color:  #ffcc66;
-    --main-text-color: white;
-    --background-main-theme: black;
-    --content-background-color: #EFEFEF;
+    --main-title-color:  #483E35;
+    --main-text-color: black;
+    --background-main-theme: white;
+    --content-background-color: #F6EDDC;
 }
 
 body {
@@ -56,7 +61,7 @@ ul.topnav li a{
     color: var(--main-title-color);
     padding: 0.5rem 0.5rem;
     text-align: center;
-    font-family: 'Helvetica';
+    font-family: helvetica;
     float: right;
     display: block;
     min-height: 2rem;
@@ -146,7 +151,7 @@ ul.topnav .dropDownIcon{
 
 .header h1{
     font-size: 5rem;
-    font-family: cano;
+    font-family: mikela;
     text-decoration: none;
     color:  var(--main-title-color);
     margin: 0;
@@ -212,7 +217,7 @@ ul.navigationList li{
 
 .websiteAss .navigation a{
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
     text-underline-offset: var(--offset, 0.2em);
     text-decoration: underline 0.1rem var(--main-title-color);
     transition: --offset 400ms, text-decoration-color 400ms;
@@ -234,6 +239,11 @@ ul.navigationList li{
     text-decoration: underline;
 }
 
+.websiteAss .about p{
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
 .websiteAss .about ul.connect {
     padding: 0;
     margin: 0;
@@ -247,7 +257,7 @@ ul.navigationList li{
 
 
 .websiteAss .about i{
-    color: white;
+    color: var(--main-text-color);
 }
 
 
@@ -262,11 +272,15 @@ ul.navigationList li{
 }
 
 .websiteAss .subscribeAndSurvey a{
-    color: white;
+    color: var(--main-text-color);
     font-size: 1.5rem;
     text-underline-offset: var(--offset, 0.2em);
     text-decoration: underline 0.15rem var(--main-title-color);
     transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.websiteAss .subscribeAndSurvey p{
+    color: var(--main-text-color);
 }
 
 .websiteAss .subscribeAndSurvey a:hover,

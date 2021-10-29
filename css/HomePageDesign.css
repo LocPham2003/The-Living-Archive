@@ -5,9 +5,14 @@
   }
 
 @font-face {
-    font-family: cano;
-    src: url(fonts/SVN-Canopee.otf);
-}  
+    font-family: mikela;
+    src: url(../fonts/Mikela-Light.otf);
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url(../fonts/HelveticaNeue-Bold.otf);
+}
 
 body {
   align-items: center;
@@ -18,20 +23,22 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0rem 2.5rem 2.5rem 2.5rem;
+  margin: 0rem 0rem 2.5rem 0rem;
   align-items: center;
   align-self: center;
 }
 
 .container h2 {
   color: white;
-  font-family: 'Helvetica';
+  font-family: helvetica;
+  font-size: 3rem;
 }
 
 .container .favoritePosts{
     display: grid;
-    grid-template-columns: 35rem 15rem;
-    grid-gap: 10px;
+    grid-template-columns: 35rem 20rem;
+    grid-template-rows: 12rem 12rem;
+    grid-gap: 50px;
 }
 
 .container .favoritePosts .mainPost {
@@ -40,34 +47,45 @@ body {
 }
 
 .container .favoritePosts .mainPost img {
-  width: 35rem;
-  height: 29rem;
+  width:  100%;
+  height: 85%;
 }
 
 .container .favoritePosts .mainPost, .subPost1, .subPost {
   display: flex;
   flex-direction: column;
   background-color: white;
-}
+  border: 1px solid black;
+} 
 
-.container .favoritePosts .mainPost h2 {
+.container .favoritePosts .mainPost h3 {
   color: black;
-  font-family: 'Helvetica';
+  font-family: helvetica;
   text-align: center;
 }
 
 
-.container .favoritePosts .subPost h2 {
+.container .favoritePosts .subPost h3 {
   color: black;
-  font-family: 'Helvetica';
+  font-family: helvetica;
   text-align: center;
 }
 
 
-.container .favoritePosts .subPost1 h2 {
+.container .favoritePosts .subPost1 h3 {
   color: black;
-  font-family: 'Helvetica';
+  font-family: helvetica;
   text-align: center;
+}
+
+.container .favoritePosts .subPost p {
+  text-align: center;
+  font-family: serif;
+}
+
+.container .favoritePosts .subPost1 p {
+  text-align: center;
+  font-family: serif;
 }
 
 @supports not (background: paint(something)) {
