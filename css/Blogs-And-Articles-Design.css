@@ -1,14 +1,36 @@
+@font-face {
+    font-family: helvetica;
+    src: url(../fonts/HelveticaNeue-Bold.otf);
+  }
+
+.section-title h1 {
+    font-family: helvetica;
+}
+
 .postContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.sectionTitle h1 {
+.postContainer h1 {
     text-align: center;
     color: black;
     font-family: sans-serif;
 }
 
-.postContainer .empty {
-    height: 100vh;
+.postContainer h1.logoName {
+    text-align: center;
+    color: black;
+    font-family: "PT Serif";
+    font-size: 5rem;
+}
+
+.postContainer img {
+    margin-top: 5rem;
+    object-fit: cover;
+    height: 50vh;
+    width: 30vw;
 }
