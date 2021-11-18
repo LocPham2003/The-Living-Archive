@@ -5,48 +5,103 @@
   }
 
 @font-face {
-    font-family: cano;
-    src: url(fonts/SVN-Canopee.otf);
-}  
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
+    font-family: mikela;
+    src: url(../fonts/Mikela-Light.otf);
 }
 
-.container .post{
-    background-color: var(--background-main-theme);
-    margin: 2.5rem;
-    padding: 2.5rem;
-    width: 20rem;
-    text-align: center;
-    box-shadow: 5px 10px;
-    border: 1px solid white;
+@font-face {
+  font-family: helvetica;
+  src: url(../fonts/HelveticaNeue-Bold.otf);
 }
 
-.container img{
-    width: 20rem;
-    height: 15rem;
-    padding: 0.5rem 0;
-    border-radius: 3px;
+body {
+  align-items: center;
+  justify-content: center;
 }
 
-.container .post a{
-    color: white;
-    font-size: 2rem;
-    font-family: cano;
-    text-underline-offset: var(--offset, 0.2em);
-    text-decoration: underline 0.15rem;
-    transition: --offset 400ms, text-decoration-color 400ms;
-
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0rem 0rem 2.5rem 0rem;
+  align-items: center;
+  align-self: center;
 }
 
-.container .post a:hover,
-.container .post a:focus {
-  --offset: 0.4em;
-  text-decoration-color: orange;
+.container h2 {
+  color: white;
+  font-family: helvetica;
+  font-size: 3rem;
+}
+
+.container .favoritePosts{
+    display: grid;
+    grid-template-columns: 35rem 20rem;
+    grid-template-rows: 12rem 12rem;
+    grid-gap: 50px;
+}
+
+.container .favoritePosts .mainPost {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.container .favoritePosts .mainPost img {
+  width:  100%;
+  height: 85%;
+}
+
+.container .favoritePosts .mainPost, .subPost1, .subPost {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+} 
+
+.container .favoritePosts .subPost1 img {
+  width:  60%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .favoritePosts .subPost img {
+  width:  60%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .favoritePosts .mainPost h3 {
+  color: black;
+  font-family: helvetica;
+  text-align: center;
+}
+
+
+.container .favoritePosts .subPost h3 {
+  color: black;
+  font-family: helvetica;
+  text-align: center;
+}
+
+
+.container .favoritePosts .subPost1 h3 {
+  color: black;
+  font-family: helvetica;
+  text-align: center;
+}
+
+.container .favoritePosts .subPost p {
+  text-align: center;
+  font-family: serif;
+}
+
+.container .favoritePosts .subPost1 p {
+  text-align: center;
+  font-family: serif;
 }
 
 @supports not (background: paint(something)) {
