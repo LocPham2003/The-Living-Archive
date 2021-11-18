@@ -58,6 +58,22 @@ body {
   border: 1px solid black;
 } 
 
+.container .favoritePosts .subPost1 img {
+  width:  60%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .favoritePosts .subPost img {
+  width:  60%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container .favoritePosts .mainPost h3 {
   color: black;
   font-family: helvetica;

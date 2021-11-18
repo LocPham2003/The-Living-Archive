@@ -26,6 +26,7 @@ These are the design and visual aspect of these following elemnents:
     --main-text-color: black;
     --background-main-theme: white;
     --content-background-color: #F6EDDC;
+    --website-ass-color: #F8F8F8;
 }
 
 body {
@@ -179,15 +180,41 @@ ul.topnav .dropDownIcon{
     width: 50%;
 }
 
+.websiteAssContainer {
+    background-color: var(--website-ass-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.websiteAssContainer h1{
+    text-align: center;
+    font-family: helvetica;
+    color: var(--main-text-color);   
+}
+
+.websiteAssContainer p.copyright{
+    text-align: center;
+    font-family: helvetica;
+    color: var(--main-text-color);    
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1rem; 
+}
+
+.websiteAssContainer p.copyright a.privacyPolicy{
+    text-decoration: underline;
+    color: var(--main-text-color);
+}
 
 .websiteAss {
-    background-color: var(--background-main-theme);
+    background-color: var(--website-ass-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-decoration: none;
-    color: white;
-    border-top: 1px solid white;
     font-size: 1rem;
 }
 
@@ -198,7 +225,8 @@ ul.topnav .dropDownIcon{
 
 .websiteAss .navigation h2{
     color: var(--main-title-color);
-    text-decoration: underline;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 ul.navigationList{
@@ -216,17 +244,13 @@ ul.navigationList li{
 }
 
 .websiteAss .navigation a{
-    text-decoration: none;
+    font-family: sans-serif;
     color: var(--main-text-color);
-    text-underline-offset: var(--offset, 0.2em);
-    text-decoration: underline 0.1rem var(--main-title-color);
-    transition: --offset 400ms, text-decoration-color 400ms;
+    text-decoration: none;   
 }
 
-.websiteAss .navigation a:hover, 
-.websiteAss .navigation a:focus {
-  --offset: 0.4rem;
-  text-decoration-color: orange;
+.websiteAss .navigation a:hover {
+    text-decoration: underline;
 }
 
 .websiteAss .about{
@@ -236,12 +260,15 @@ ul.navigationList li{
 
 .websiteAss .about h2{
     color: var(--main-title-color);
-    text-decoration: underline;
+    text-decoration: none;
+    font-family: helvetica;
+
 }
 
 .websiteAss .about p{
     color: var(--main-text-color);
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 .websiteAss .about ul.connect {
@@ -268,23 +295,34 @@ ul.navigationList li{
 
 .websiteAss .subscribeAndSurvey h2{
     color: var(--main-title-color);
-    text-decoration: underline;
+    text-decoration: none;
+    font-family: helvetica;
 }
 
 .websiteAss .subscribeAndSurvey a{
     color: var(--main-text-color);
-    font-size: 1.5rem;
-    text-underline-offset: var(--offset, 0.2em);
-    text-decoration: underline 0.15rem var(--main-title-color);
-    transition: --offset 400ms, text-decoration-color 400ms;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; 
 }
+
+.websiteAss .subscribeAndSurvey a:hover {
+    background-position: 0 100%;
+}
+
+
 
 .websiteAss .subscribeAndSurvey p{
+    font-family: sans-serif;
     color: var(--main-text-color);
-}
-
-.websiteAss .subscribeAndSurvey a:hover,
-.websiteAss .subscribeAndSurvey a:focus {
-  --offset: 0.4em;
-  text-decoration-color: orange;
 }
