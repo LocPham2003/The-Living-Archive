@@ -20,8 +20,8 @@ var links = {
 var support = {
   generateSupportContent: function(){
     var introduction = `
-    <p>Hi :D. If you are here then you're probably thinking about supporting my website, 
-    so I am greatly appreciated for that!
+    <p>Hi :D. If you are here then you're probably thinking about supporting our website, 
+    so we are greatly appreciated for that!
     <br>
     <br>
     The Living Archive is created as a place to inspire and enrich its audience through artistic 
@@ -31,16 +31,16 @@ var support = {
     unrelated ads will absolutely wreck havoc your experience in The Living Archives.
     <br>
     <br>
-    However, there are still ways to support me! Check these following options
+    However, there are still ways to support us! Check these following options
     <br>
     <br>
     </p>`;
 
     var fanArtsSupport = `<h2><b>1. Fanarts</b></h2>
-    I'd really appreciated your artworks, letters or literally thing that you 
-    thought it'd be cool to share to me :D.
+    We'd really appreciated your artworks, letters or anything that you 
+    thought it'd be cool to share to us :D.
     <br>
-    All of your submissions will be posted on the "Fanarts" section of my website.
+    All of your submissions will be posted on the "Fanarts" section of our website.
     <br>
     <br>
     <a href="https://docs.google.com/forms/d/1G5_igOkYJwB94ZATAQAN2goGcOfZA10_GDmUbkJVXdM/edit?usp=sharing" class="interactBtn">Submit here!</a>
@@ -71,8 +71,8 @@ var support = {
 
     var feedbackSupport = `
     <h2><b>2. Feedback</b></h2>
-        Constructive criticism or feedbacks are also a great way for you to support me. This website is created by me but it is meant for you. Your feedback are the most valuable support as it 
-        improve the quality of my content and makes the audience time here much more plausible. 
+        Constructive criticism or feedbacks are also a great way for you to support us. This website is created by us but it is meant for you. Your feedback is the most valuable support as it 
+        improves the quality of our content and makes the audience time here much more plausible. 
         <br>
         <br>
         <a href="https://forms.gle/KoM2vM6aDijzBH2q6" class="interactBtn">Fill a feedback form</a>
@@ -81,10 +81,10 @@ var support = {
     `;
 
     var finalRegards = `
-    I sincerely thank you! Your support will be a huge motivation for me to keep producing quality content for you to enjoy.
+    We sincerely thank you! Your support will be a huge motivation for us to keep producing quality content for you to enjoy.
         <br>
 
-        Hope you have an amazing time reading the content I posted on The Living Archives.
+        Hope you have an amazing time with the content on The Living Archives.
         <br>
         <br>    
         Regards,
